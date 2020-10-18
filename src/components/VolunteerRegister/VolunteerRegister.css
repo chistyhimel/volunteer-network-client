@@ -1,0 +1,26 @@
+.register-container{
+    border: 1px solid lightgray;
+    padding: 15px;
+    margin-top: 30px;
+    
+}
+.logo{
+    width: 200px;
+}
+.cancel-button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .register-container{
+        margin: 0 auto;
+        width: 500px;
+        padding: 35px;
+    }
+    .logo{
+        width: 350px;
+    }
+
+}

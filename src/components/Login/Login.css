@@ -1,0 +1,20 @@
+.login-box{
+    margin: 0 auto;
+    height: 400px;
+    border: 1px solid lightgray;
+}
+.login-box Button{
+    border-radius: 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .login-box{
+        margin: 0 auto;
+        width: 450px;
+    }
+    .login-box Button{
+        width: 400px;
+        border-radius: 20px;
+    }
+}

@@ -1,0 +1,20 @@
+.header-container{
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.815) ,rgba(255, 255, 255, 0.774) ),url("../../images/Mask\ Group.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.voluntary-container{
+    margin-top: -130px !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-container{
+        height: 60vh; 
+    }
+   .search-box {
+       width: 600px !important;
+       margin: 30px auto;
+   } 
+}
