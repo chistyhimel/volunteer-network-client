@@ -9,14 +9,16 @@ import VoluntaryData from "../VoluntaryData/VoluntaryData";
 
 const VolunteerRegister = () => {
   const { register, handleSubmit, watch, errors } = useForm();
-  const [loggedInUser,setLoggedInUser] = useContext(UserContext);
-  const {work} = useParams();
-  const regesterWork = VoluntaryData.find(data=> data.name.toLowerCase()=== work.toLowerCase())
-  
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const { work } = useParams();
+  const regesterWork = VoluntaryData.find(
+    (data) => data.name.toLowerCase() === work.toLowerCase()
+  );
+
   const onSubmit = (data) => {
     data.img = regesterWork.img;
-    console.log(data)
-    fetch("http://localhost:5000/volunteerRegister", {
+    console.log(data);
+    fetch("https://sheltered-caverns-94338.herokuapp.com/volunteerRegister", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -26,8 +28,8 @@ const VolunteerRegister = () => {
       .then((response) => response.json())
       .then((data) => {
         if (data) {
-          alert('Registerd Succesfully')
-          data = {}
+          alert("Registerd Succesfully");
+          data = {};
         }
       });
   };

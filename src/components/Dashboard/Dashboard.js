@@ -9,7 +9,8 @@ const Dashboard = () => {
   const [regesterdWork, setRegesteredWork] = useState([]);
   useEffect(() => {
     fetch(
-      "http://localhost:5000/regesteredVoluntary?email=" + loggedInUser.email
+      "https://sheltered-caverns-94338.herokuapp.com/regesteredVoluntary?email=" +
+        loggedInUser.email
     )
       .then((response) => response.json())
       .then((data) => {
@@ -18,7 +19,7 @@ const Dashboard = () => {
   }, []);
 
   const handleDeleteItem = (id) => {
-    fetch(`http://localhost:5000/delete/${id}`, {
+    fetch(`https://sheltered-caverns-94338.herokuapp.com/delete/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
