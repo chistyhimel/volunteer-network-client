@@ -27,8 +27,11 @@ A full-stake responsive web application where a volunteer can regester and revie
 - Express JS
 - MongoDB
 - Heroku
-<br/>
+  <br/>
+  <br/>
+
+> ### [Resume]('https://drive.google.com/file/d/1d6OfaYXPL4u8YPYlBqk1Iay-Vf7Bh8jJ/view?usp=sharing')
+
 <br/>
 
-### [Resume]('https://drive.google.com/file/d/1d6OfaYXPL4u8YPYlBqk1Iay-Vf7Bh8jJ/view?usp=sharing') 
-### [Linkedin]("https://www.linkedin.com/in/chistyhimel/")
+> ### [Linkedin]("https://www.linkedin.com/in/chistyhimel/")
